@@ -14,7 +14,7 @@
     if ( isset( $_POST['myVariable'] ) ){
       $myVariable = $_POST['myVariable'];
     }
-    echo "<h1>My Program</h1>\n";
+    echo "<h1>Heres the answer</h1>\n";
     echo "<p>My Variable is = ".$myVariable."</p>\n";
     ?>
     
