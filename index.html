@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
+<html lang="en">
 <head>
-  <title>Circumference and Area calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area and Circumference of a Circle</title>
 
   <!-- MDL Inclusions -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -9,62 +12,53 @@
 </head>
 
 <body>
-  <!-- Uses a header that contracts as the page scrolls down. -->
-  <style>
-    .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type 
-      padding-right: 0;
-    
-  </style>
-
-  <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--waterfall">
-      <!-- Top row, always visible -->
+  <!-- This is the MDL Layout -->
+  <div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Area and Circumference of a Circle</span>
+        <span class="mdl-layout__title">Area and Circumference of a Circle</span>
         <div class="mdl-layout-spacer"></div>
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-          <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
-            <i class="material-icons">search</i>
-          </label>
-          <div class="mdl-textfield__expandable-holder">
-            <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp">
-          </div>
-        </div>
-      </div>
-      <!-- Bottom row, not visible on scroll -->
-      <div class="mdl-layout__header-row">
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="#">Unit 1</a>
+          <a class="mdl-navigation__link" href="#">Unit 2</a>
+          <a class="mdl-navigation__link" href="#">Unit 3</a>
+          <a class="mdl-navigation__link" href="#">Unit 4</a>
+          <a class="mdl-navigation__link" href="#">Unit 5</a>
         </nav>
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
+      <span class="mdl-layout__title">Area and Circumference of a Circle</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="#">Unit 1</a>
+        <a class="mdl-navigation__link" href="#">Unit 2</a>
+        <a class="mdl-navigation__link" href="#">Unit 3</a>
+        <a class="mdl-navigation__link" href="#">Unit 4</a>
+        <a class="mdl-navigation__link" href="#">Unit 5</a>
       </nav>
     </div>
     <main class="mdl-layout__content">
-      <div class="page-content">
+      <div class="content">
         <center>
-          <!-- Numeric Textfield -->
-          <form action=handler.php method="POST">
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="$_diameter">
-              <label class="mdl-textfield__label" for="sample2">Enter a Number...</label>
-              <span class="mdl-textfield__error">Input is not a number!</span>
+          <h1>Circumference and Area of a Circle</h1>
+        </center><br>
+        <center>
+          <form name="myForm" action="handler.php" method="POST">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <label class="mdl-textfield__label" for="diameter">Enter Diameter:</label>
+              <input class="mdl-textfield__input" type="text" name="diameter" id="diameter" required>
             </div>
-            <button>Enter</button>
-          </form>
+        </center>
+        <br>
+        <br>
+        <center>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">
+            Submit
+          </button>
+        </center>
+        </form>
       </div>
     </main>
   </div>
+</body>
+</html>
